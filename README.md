@@ -1,6 +1,6 @@
 **Hardenix0r**
 
-Hardenix=r is a Python (3.6) script developed for hardening purpouses.
+Hardenix0r is a Python (3.6) script developed for hardening purpouses.
 
 It's a WIP project so don't expect to run smoothly (yet).
 
