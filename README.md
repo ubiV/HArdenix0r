@@ -2,7 +2,7 @@
 
 Hardenix0r is a Python (3.6) script developed for hardening purpouses.
 
-It's a WIP project so don't expect to run smoothly (yet).
+It's a WIP project so it will not run smoothly (yet).
 
 It uses a json file (under ./data/$os.json) where all the scripts are stored. 
 (pay attention to command injection though!)
