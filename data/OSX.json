@@ -1,0 +1,164 @@
+{"commands": [
+    {
+      "desc": "Check if there is any software update available",
+      "severity": 1,
+      "ask": false,
+      "comp": [
+        {
+          "version": "10.14",
+          "command": "softwareupdate -l",
+          "response": {
+            "text": "No new software available",
+            "format": "text"
+          },
+          "remediation": "sudo softwareupdate -i "
+        },
+        {
+          "version": "10.13",
+          "command": ""
+        }
+      ]
+    },
+    {
+      "desc": "Enable auto update",
+      "severity": 3,
+      "ask": false,
+      "comp": [
+         {
+          "version": "10.14",
+          "command": "defaults read /Library/Preferences/com.apple.SoftwareUpdate",
+          "response": {
+            "text": "1",
+            "format": "json",
+            "key": "AutomaticallyInstallMacOSUpdates"
+          },
+          "remediation": "sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate -i "
+        },
+        {
+          "version": "10.13",
+          "command": ""
+        }
+      ]
+    },
+    {
+      "desc": "Enable app update installs",
+      "severity": 3,
+      "ask": false,
+      "comp": [
+         {
+          "version": "10.14",
+          "command": ""
+        },
+        {
+          "version": "10.13",
+          "command": ""
+        }
+      ]
+    },
+    {
+      "desc": "Enable installation of system data files / security updates",
+      "ask": false,
+      "severity": 3,
+      "comp": [
+         {
+          "version": "10.14",
+          "command": ""
+        },
+        {
+          "version": "10.13",
+          "command": ""
+        }
+      ]
+    },
+    {
+      "desc": "Enable mac os updates installs",
+      "ask": false,
+      "severity": 3,
+      "comp": [
+         {
+          "version": "10.14",
+          "command": ""
+        },
+        {
+          "version": "10.13",
+          "command": ""
+        }
+      ]
+    },
+  {
+      "desc": "Turn off bluetooth if not paired device exists",
+      "ask": false,
+      "severity": 3,
+      "comp": [
+         {
+          "version": "10.14",
+          "command": ""
+        },
+        {
+          "version": "10.13",
+          "command": ""
+        }
+      ]
+    },
+   {
+      "desc": "The computer is discoverable through bluetooth only when the panel is open",
+      "ask": false,
+      "severity": 3,
+      "comp": [
+         {
+          "version": "10.14",
+          "command": ""
+        },
+        {
+          "version": "10.13",
+          "command": ""
+        }
+      ]
+    },
+  {
+      "desc": "Show bluetooth status icon",
+      "ask": false,
+      "severity": 3,
+      "comp": [
+         {
+          "version": "10.14",
+          "command": ""
+        },
+        {
+          "version": "10.13",
+          "command": ""
+        }
+      ]
+    },
+  {
+      "desc": "Enable system time auto update",
+      "ask": false,
+      "severity": 3,
+      "comp": [
+         {
+          "version": "10.14",
+          "command": ""
+        },
+        {
+          "version": "10.13",
+          "command": ""
+        }
+      ]
+    },
+  {
+      "desc": "The computer is discoverable through bluetooth only when the panel is open",
+      "ask": false,
+      "severity": 3,
+      "comp": [
+         {
+          "version": "10.14",
+          "command": ""
+        },
+        {
+          "version": "10.13",
+          "command": ""
+        }
+      ]
+    }
+  ]
+}
