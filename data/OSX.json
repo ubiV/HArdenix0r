@@ -26,13 +26,12 @@
       "comp": [
          {
           "version": "10.14",
-          "command": "defaults read /Library/Preferences/com.apple.SoftwareUpdate",
+          "command": "defaults read /Library/Preferences/com.apple.SoftwareUpdate AutomaticallyInstallMacOSUpdates",
           "response": {
             "text": "1",
-            "format": "json",
-            "key": "AutomaticallyInstallMacOSUpdates"
+            "format": "text"
           },
-          "remediation": "sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate -i "
+          "remediation": "sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticallyInstallMacOSUpdates 1 "
         },
         {
           "version": "10.13",
