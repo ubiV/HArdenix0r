@@ -1,8 +1,13 @@
-**Hardenix0r**
+# Hardenix0r
 
-Hardenix0r is a Python (3.6) script developed for hardening purpouses.
+####NOT READY FOR PRODUCTION 
+
+*Hardenix0r* is a Python (3.6) script developed for hardening purpouses.
 
 It's a WIP project so it will not run smoothly (yet).
+
+Its goal is to apply a set of configurations (through executing scripts, comparing its output and applying patches if needed), in order to harden default OSX installations.
+
 
 It uses a json file (under ./data/$os.json) where all the scripts are stored. 
 (pay attention to command injection though!)
